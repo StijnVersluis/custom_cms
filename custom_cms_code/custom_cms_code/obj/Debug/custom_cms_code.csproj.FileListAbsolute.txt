@@ -1,0 +1,11 @@
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\bin\Debug\custom_cms_code.exe.config
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\bin\Debug\custom_cms_code.exe
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\bin\Debug\custom_cms_code.pdb
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\obj\Debug\custom_cms_code.csproj.AssemblyReference.cache
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\obj\Debug\custom_cms_code.Properties.Resources.resources
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\obj\Debug\custom_cms_code.csproj.GenerateResource.cache
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\obj\Debug\custom_cms_code.csproj.CoreCompileInputs.cache
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\obj\Debug\custom_cms_code.exe
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\obj\Debug\custom_cms_code.pdb
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\obj\Debug\custom_cms_code.UI.LoginForm.resources
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\obj\Debug\custom_cms_code.MainForm.resources
