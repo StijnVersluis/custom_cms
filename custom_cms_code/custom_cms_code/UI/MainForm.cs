@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using custom_cms_code.LogicLayer;
 
 namespace custom_cms_code
 {
@@ -20,7 +21,13 @@ namespace custom_cms_code
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            LoginForm lg = new LoginForm();
+            //LoginForm lg = new LoginForm();
+            //this.Hide();
+            //lg.ShowDialog();
+            //this.Show();
+            var webbie = new Website(1);
+            dataGridView1.DataSource = webbie.PagesDataTable;
+            webbie.Pages.ForEach(page => listBox1.Items.Add(page.Location));
         }
     }
 }
