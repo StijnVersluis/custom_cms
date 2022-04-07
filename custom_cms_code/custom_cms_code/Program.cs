@@ -17,9 +17,9 @@ namespace custom_cms_code
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            new GetUsers();
-            new GetWebsites();
-            new GetPages();
+            //new GetUsers();
+            //new GetWebsites();
+            //new GetPages();
             Application.Run(new MainForm());
         }
     }

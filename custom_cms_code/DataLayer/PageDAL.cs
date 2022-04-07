@@ -1,18 +1,17 @@
-﻿using custom_cms_code.LogicLayer;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace custom_cms_code.DataLayer
+namespace DataLayer
 {
-    class GetPages
+    class PageDAL
     {
         public static DataTable Pages;
 
-        public GetPages()
+        public PageDAL()
         {
             Pages = GlobalFuncs.SelectQueryFrom("pages");
         }
@@ -34,12 +33,5 @@ namespace custom_cms_code.DataLayer
             }
             return websitePages;
         }
-
-        //public static List<Page> GetPagesFromWebsite(int websiteId)
-        //{
-        //    List<Page> resultList = new List<Page>();
-        //    foreach (DataRow Page in Pages.Rows) if ((int)Page["website_id"] == websiteId) resultList.Add(new Page((int)Page["id"]));
-        //    return resultList;
-        //}
     }
 }

@@ -4,23 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace custom_cms_code.LogicLayer
+namespace BussinessLogic
 {
     class User
     {
-        
-        public static string Name;
+        public int Id { private set; get; }
+        public string Name { private set; get; }
         private string Pass;
 
-        public User(string name, string pass)
+        public User(int id, string name, string pass)
         {
+            Id = id;
             Name = name;
             Pass = pass;
-        }
-
-        public string GetName()
-        {
-            return Name;
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using custom_cms_code.DataLayer;
 using System.Data;
 
-namespace custom_cms_code.LogicLayer
+namespace BussinessLogic
 {
     class Website
     {

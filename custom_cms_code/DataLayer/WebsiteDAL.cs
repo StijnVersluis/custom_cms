@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using custom_cms_code.LogicLayer;
 
-namespace custom_cms_code.DataLayer
+namespace DataLayer
 {
-    class GetWebsites
+    class WebsiteDAL
     {
         public static DataTable Websites;
 
-        public GetWebsites()
+        public WebsiteDAL()
         {
             Websites = GlobalFuncs.SelectQueryFrom("websites");
         }
