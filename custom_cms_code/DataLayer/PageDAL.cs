@@ -1,37 +1,22 @@
-﻿using System;
+﻿using Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace DataLayer
 {
-    class PageDAL
+    public class PageDAL : IPage, IPageContainer
     {
-        public static DataTable Pages;
-
-        public PageDAL()
+        public PageDTO FindById(int id)
         {
-            Pages = GlobalFuncs.SelectQueryFrom("pages");
+            throw new NotImplementedException();
         }
 
-        public static DataTable GetDataTablePagesFromWebsite(int websiteId)
+        public List<PageDTO> GetAll()
         {
-            string[] dbColumns = new string[] { "id", "website_id", "location" };
-            DataTable websitePages = new DataTable();
-            DataRow NewRow = websitePages.NewRow();
-            foreach (string str in dbColumns) websitePages.Columns.Add(new DataColumn(str));
-
-            foreach (DataRow page in Pages.Rows)
-            {
-                if ((int)page["website_id"] == websiteId)
-                {
-                    foreach(string str in dbColumns) NewRow[str] = page[str];
-                    websitePages.Rows.Add(NewRow);
-                }
-            }
-            return websitePages;
+            throw new NotImplementedException();
         }
     }
 }

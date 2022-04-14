@@ -1,19 +1,30 @@
-﻿using System;
+﻿using Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Data;
 
 namespace DataLayer
 {
-    class WebsiteDAL
+    public class WebsiteDAL : IWebsite, IWebsiteContainer
     {
-        public static DataTable Websites;
-
-        public WebsiteDAL()
+        public WebsiteDTO FindById(int id)
         {
-            Websites = GlobalFuncs.SelectQueryFrom("websites");
+            throw new NotImplementedException();
+        }
+
+        public List<WebsiteDTO> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<PageDTO> GetAllPagesFromWebsiteId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<PageDTO> GetPages()
+        {
+            throw new NotImplementedException();
         }
     }
 }

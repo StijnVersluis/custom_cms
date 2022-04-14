@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5rL6vyh+Ms9gVHzzLNWWodkxvFn/Be7hG2J3gksTNwusEwJavrGSAk/l9d7lcKW4n0T/rppiDOyAwBppEi0vqA==",
+  "dgSpecHash": "6Iw8gmmVNt9hoPAJeSl/d9Fh0Da/Yd4NnP52GV42d4UPNpnLbFWFCZA00t5z1vGfohsv/H5Q/gkf9KtgtQrWKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\stijn\\source\\repos\\custom_cms\\custom_cms_code\\BussinessLogic\\BussinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\stijn\\source\\repos\\custom_cms\\custom_cms_code\\BussinessLogic\\LogicLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

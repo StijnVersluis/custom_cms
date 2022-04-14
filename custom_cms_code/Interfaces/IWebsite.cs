@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using DataLayer;
 
 namespace Interfaces
 {
-    interface IPageDAL
+    public interface IWebsite
     {
-        public void Save(PageDTO pageDTO);
+        public List<PageDTO> GetPages();
     }
 }

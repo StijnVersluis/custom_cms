@@ -1,38 +1,34 @@
-﻿using System;
+﻿using Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using custom_cms_code.DataLayer;
-using System.Data;
 
-namespace BussinessLogic
+namespace LogicLayer
 {
-    class Website
+    public class Website
     {
-        private int Id;
-        public string name { get; }
-        private string domain;
-        DataRow WebsiteRow;
-        public List<Page> Pages;
-        public DataTable PagesDataTable;
+        private IWebsite iWebsite;
+        public int Id { private set; get; }
+        public string Name { private set; get; }
+        public string Domain { private set; get; }
+        private PageContainer Pages;
 
-        public Website(int id)
+        public Website(IWebsite website)
         {
-            Id = id;
-            WebsiteRow = GetWebsites.Websites.Rows[id-1];
-            name = (string)WebsiteRow["name"];
-            domain = (string)WebsiteRow["domain"];
-
-            Pages = GetPagesFromWebsite(id);
-            PagesDataTable = GetPages.GetDataTablePagesFromWebsite(id);
+            iWebsite = website;
         }
 
-        public static List<Page> GetPagesFromWebsite(int websiteId)
+        public Website(int id, string name, string domain)
         {
-            List<Page> resultList = new List<Page>();
-            foreach (DataRow Page in GetPages.Pages.Rows) if ((int)Page["website_id"] == websiteId) resultList.Add(new Page((int)Page["id"]));
-            return resultList;
+            Id = id;
+            Name = name;
+            Domain = domain;
+            Pages = new PageContainer(id);
+        }
+
+        public PageContainer GetPages()
+        {
+            return Pages;
         }
     }
 }

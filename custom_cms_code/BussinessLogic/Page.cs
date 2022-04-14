@@ -1,23 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using Interfaces;
 
-namespace BussinessLogic
+namespace LogicLayer
 {
-    class Page
+    public class Page
     {
-        public static int Id { get; private set; }
-        public string Location { get; private set; }
-        public static int WebsiteId { get; private set; }
-
+        private IPage iPage;
+        public int Id { private set; get; }
+        public int WebsiteId { private set; get; }
+        public string Location { private set; get; }
+        public Page(IPage page)
+        {
+            iPage = page;
+        }
         public Page(int id, int websiteId, string location)
         {
             Id = id;
             WebsiteId = websiteId;
             Location = location;
+        }
+        public Page(PageDTO pageDTO)
+        {
+            Id = pageDTO.Id;
+            WebsiteId = pageDTO.WebsiteId;
+            Location = pageDTO.Location;
+        }
+        public void EditPage(IPage pageDal)
+        {
+            //pageDal.Edit();
         }
     }
 }

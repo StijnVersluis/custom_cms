@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\stijn\\source\\repos\\custom_cms\\custom_cms_code\\DataLayer\\DataLayer.csproj": {}
+    "C:\\Users\\stijn\\source\\repos\\custom_cms\\custom_cms_code\\BussinessLogic\\LogicLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\stijn\\source\\repos\\custom_cms\\custom_cms_code\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\stijn\\source\\repos\\custom_cms\\custom_cms_code\\BussinessLogic\\LogicLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\stijn\\source\\repos\\custom_cms\\custom_cms_code\\DataLayer\\DataLayer.csproj",
-        "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\stijn\\source\\repos\\custom_cms\\custom_cms_code\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\stijn\\source\\repos\\custom_cms\\custom_cms_code\\BussinessLogic\\LogicLayer.csproj",
+        "projectName": "LogicLayer",
+        "projectPath": "C:\\Users\\stijn\\source\\repos\\custom_cms\\custom_cms_code\\BussinessLogic\\LogicLayer.csproj",
         "packagesPath": "C:\\Users\\stijn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\stijn\\source\\repos\\custom_cms\\custom_cms_code\\DataLayer\\obj\\",
+        "outputPath": "C:\\Users\\stijn\\source\\repos\\custom_cms\\custom_cms_code\\BussinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

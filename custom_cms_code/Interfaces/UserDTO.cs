@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataLayer
+namespace Interfaces
 {
-    class WebsiteDTO
+    public class UserDTO
     {
     }
 }
