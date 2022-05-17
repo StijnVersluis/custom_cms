@@ -25,9 +25,9 @@ namespace LogicLayer
         {
             return new Page(iPageContainer.FindById(id));
         }
-        public void SavePages()
+        public void CreatePage(Page page)
         {
-            throw new NotImplementedException();
+            iPageContainer.CreatePage(new PageDTO(page.Id, page.WebsiteId, page.Location));
         }
     }
 }

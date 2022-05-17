@@ -7,13 +7,13 @@ namespace LogicLayer
 {
     public class Page
     {
-        private IPage iPage;
+        private IPage PageDAL;
         public int Id { private set; get; }
         public int WebsiteId { private set; get; }
         public string Location { private set; get; }
         public Page(IPage page)
         {
-            iPage = page;
+            PageDAL = page;
         }
         public Page(int id, int websiteId, string location)
         {
@@ -27,9 +27,13 @@ namespace LogicLayer
             WebsiteId = pageDTO.WebsiteId;
             Location = pageDTO.Location;
         }
-        public void EditPage(IPage pageDal)
+        public void EditPage(Page page)
         {
-            //pageDal.Edit();
+            PageDAL.EditPage(new PageDTO(page.Id, page.WebsiteId, page.Location));
+        }
+        public void DeletePage(Page page)
+        {
+            PageDAL.DeletePage(new PageDTO(page.Id, page.WebsiteId, page.Location));
         }
     }
 }

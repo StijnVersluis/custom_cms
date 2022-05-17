@@ -6,5 +6,7 @@ namespace Interfaces
 {
     public interface IPage
     {
+        public void EditPage(PageDTO page);
+        public void DeletePage(PageDTO page);
     }
 }

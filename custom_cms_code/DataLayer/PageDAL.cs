@@ -66,5 +66,29 @@ namespace DataLayer
                 int rowsaffected = sqlCommand.ExecuteNonQuery();
             }
         }
+
+        public void EditPage(PageDTO page)
+        {
+            using (SqlConnection con = new SqlConnection(GlobalVars.connectionString))
+            {
+                con.Open();
+                SqlCommand sqlCommand = new SqlCommand("UPDATE Pages SET Website_id = @website_id, Location = @location WHERE Id = @id", con);
+                sqlCommand.Parameters.AddWithValue("@id", page.Id);
+                sqlCommand.Parameters.AddWithValue("@website_id", page.WebsiteId);
+                sqlCommand.Parameters.AddWithValue("@location", page.Location);
+                int rowsaffected = sqlCommand.ExecuteNonQuery();
+            }
+        }
+
+        public void DeletePage(PageDTO page)
+        {
+            using (SqlConnection con = new SqlConnection(GlobalVars.connectionString))
+            {
+                con.Open();
+                SqlCommand sqlCommand = new SqlCommand("DELETE FROM Pages Id = @id", con);
+                sqlCommand.Parameters.AddWithValue("@id", page.Id);
+                int rowsaffected = sqlCommand.ExecuteNonQuery();
+            }
+        }
     }
 }
