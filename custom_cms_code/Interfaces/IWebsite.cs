@@ -6,5 +6,7 @@ namespace Interfaces
 {
     public interface IWebsite
     {
+        public void UpdatePage(WebsiteDTO website);
+        public void DeleteWebsite(WebsiteDTO website);
     }
 }
