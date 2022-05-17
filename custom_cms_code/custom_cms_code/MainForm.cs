@@ -1,5 +1,5 @@
 ﻿using System;
-using custom_cms_code.UI;
+using View;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,9 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using custom_cms_code.LogicLayer;
+using DataLayer;
+using LogicLayer;
+using Interfaces;
 
-namespace custom_cms_code
+namespace View
 {
     public partial class MainForm : Form
     {

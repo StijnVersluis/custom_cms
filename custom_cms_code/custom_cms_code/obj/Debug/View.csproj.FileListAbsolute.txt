@@ -1,0 +1,2 @@
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\obj\Debug\custom_cms_code.exe
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\custom_cms_code\obj\Debug\custom_cms_code.pdb

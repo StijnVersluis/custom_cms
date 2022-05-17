@@ -1,5 +1,5 @@
 ﻿
-namespace custom_cms_code
+namespace View
 {
     partial class MainForm
     {

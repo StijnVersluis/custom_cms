@@ -11,11 +11,17 @@ namespace LogicLayer
         public int Id { private set; get; }
         public string Name { private set; get; }
         public string Domain { private set; get; }
-        private PageContainer Pages;
 
         public Website(IWebsite website)
         {
             iWebsite = website;
+        }
+
+        public Website(WebsiteDTO website)
+        {
+            Id = website.Id;
+            Name = website.Name;
+            Domain = website.Domain;
         }
 
         public Website(int id, string name, string domain)
@@ -23,12 +29,6 @@ namespace LogicLayer
             Id = id;
             Name = name;
             Domain = domain;
-            Pages = new PageContainer(id);
-        }
-
-        public PageContainer GetPages()
-        {
-            return Pages;
         }
     }
 }

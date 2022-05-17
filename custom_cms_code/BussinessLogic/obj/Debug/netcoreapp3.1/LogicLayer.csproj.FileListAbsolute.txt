@@ -1,0 +1,13 @@
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\bin\Debug\netcoreapp3.1\LogicLayer.deps.json
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\bin\Debug\netcoreapp3.1\LogicLayer.dll
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\bin\Debug\netcoreapp3.1\LogicLayer.pdb
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\bin\Debug\netcoreapp3.1\Interfaces.dll
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\bin\Debug\netcoreapp3.1\Interfaces.pdb
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\netcoreapp3.1\LogicLayer.csproj.AssemblyReference.cache
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\netcoreapp3.1\LogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\netcoreapp3.1\LogicLayer.AssemblyInfoInputs.cache
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\netcoreapp3.1\LogicLayer.AssemblyInfo.cs
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\netcoreapp3.1\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\netcoreapp3.1\LogicLayer.csproj.CopyComplete
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\netcoreapp3.1\LogicLayer.dll
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\netcoreapp3.1\LogicLayer.pdb

@@ -6,6 +6,5 @@ namespace Interfaces
 {
     public interface IWebsite
     {
-        public List<PageDTO> GetPages();
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\bin\Debug\net5.0\LogicLayer.deps.json
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\bin\Debug\net5.0\LogicLayer.dll
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\bin\Debug\net5.0\ref\LogicLayer.dll
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\bin\Debug\net5.0\LogicLayer.pdb
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\bin\Debug\net5.0\Interfaces.dll
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\bin\Debug\net5.0\Interfaces.pdb
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\net5.0\LogicLayer.csproj.AssemblyReference.cache
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\net5.0\LogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\net5.0\LogicLayer.AssemblyInfoInputs.cache
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\net5.0\LogicLayer.AssemblyInfo.cs
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\net5.0\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\net5.0\LogicLayer.csproj.CopyComplete
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\net5.0\LogicLayer.dll
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\net5.0\ref\LogicLayer.dll
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\BussinessLogic\obj\Debug\net5.0\LogicLayer.pdb

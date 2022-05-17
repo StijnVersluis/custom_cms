@@ -8,22 +8,22 @@ namespace LogicLayer
     public class PageContainer
     {
         private IPageContainer iPageContainer;
-        private List<Page> Pages;
         public PageContainer(IPageContainer pageContainer)
         {
             iPageContainer = pageContainer;
         }
-        public PageContainer(int websiteId)
+        public List<Page> GetAll(int websiteId)
         {
-
-        }
-        public List<Page> GetAll()
-        {
-            return Pages;
+            var res = new List<Page>();
+            iPageContainer.GetAll(websiteId).ForEach(w=>
+            {
+                res.Add(new Page(w));
+            });
+            return res;
         }
         public Page FindPageById(int id)
         {
-            return new Page(1, 1, "index.php");
+            return new Page(iPageContainer.FindById(id));
         }
         public void SavePages()
         {

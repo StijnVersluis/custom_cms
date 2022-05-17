@@ -6,7 +6,8 @@ namespace Interfaces
 {
     public interface IPageContainer
     {
-        public List<PageDTO> GetAll();
+        public List<PageDTO> GetAll(int websiteId);
         public PageDTO FindById(int id);
+        public void CreatePage(PageDTO page);
     }
 }

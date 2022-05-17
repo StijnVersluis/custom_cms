@@ -1,0 +1,34 @@
+using DataLayer;
+using LogicLayer;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace View
+{
+    static class Program
+    {
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        /// 
+
+        public static WebsiteContainer wbC = new WebsiteContainer(new WebsiteDAL());
+        public static PageContainer pgC = new PageContainer(new PageDAL());
+
+        [STAThread]
+        static void Main()
+        {
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+            foreach(Website w in  wbC.GetAllWebsites())
+            {
+                Console.WriteLine(w.Name);
+            }
+        }
+    }
+}

@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace custom_cms_code.UI
+namespace custom_cms_codeUI
 {
     public partial class LoginForm : Form
     {

@@ -1,0 +1,10 @@
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\Interfaces\bin\Debug\netcoreapp3.1\Interfaces.deps.json
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\Interfaces\bin\Debug\netcoreapp3.1\Interfaces.dll
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\Interfaces\bin\Debug\netcoreapp3.1\Interfaces.pdb
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.AssemblyInfoInputs.cache
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.AssemblyInfo.cs
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.dll
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.pdb
+C:\Users\stijn\source\repos\custom_cms\custom_cms_code\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.csproj.AssemblyReference.cache
