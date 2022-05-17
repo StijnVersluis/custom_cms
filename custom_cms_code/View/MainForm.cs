@@ -29,12 +29,14 @@ namespace View
 
         private void refreshWebsitesBtn_Click(object sender, EventArgs e)
         {
-
+            websiteDataGridView.DataSource = websites.GetAllWebsites();
         }
 
         private void refreshPagesBtn_Click(object sender, EventArgs e)
         {
-
+            int websitesId = (int)websiteDataGridView.Rows[websiteDataGridView.CurrentRow.Index].Cells[0].Value;
+            MessageBox.Show("Website id = " + websitesId.ToString());
+            pagesDataGridView.DataSource = pages.GetAll(websitesId);
         }
 
         private void refreshComponentsBtn_Click(object sender, EventArgs e)
