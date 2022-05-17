@@ -27,5 +27,10 @@ namespace LogicLayer
         {
             return new Website(Wb.FindById(id));
         }
+
+        public void CreateWebsite(Website website)
+        {
+            Wb.CreateWebsite(new WebsiteDTO(website.Id, website.Name, website.Domain));
+        }
     }
 }
