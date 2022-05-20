@@ -9,5 +9,7 @@ namespace Interfaces
         public List<WebsiteDTO> GetAll();
         public WebsiteDTO FindById(int id);
         public void CreateWebsite(WebsiteDTO website);
+        public void UpdateWebsite(WebsiteDTO website);
+        public void DeleteWebsite(int id);
     }
 }

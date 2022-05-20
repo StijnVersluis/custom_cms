@@ -17,18 +17,23 @@ namespace LogicLayer
             iWebsite = website;
         }
 
-        public Website(WebsiteDTO website)
-        {
-            Id = website.Id;
-            Name = website.Name;
-            Domain = website.Domain;
-        }
-
         public Website(int id, string name, string domain)
         {
             Id = id;
             Name = name;
             Domain = domain;
+        }
+        public Website(string name, string domain)
+        {
+            Name = name;
+            Domain = domain;
+        }
+
+        public Website(WebsiteDTO website)
+        {
+            Id = website.Id;
+            Name = website.Name;
+            Domain = website.Domain;
         }
     }
 }

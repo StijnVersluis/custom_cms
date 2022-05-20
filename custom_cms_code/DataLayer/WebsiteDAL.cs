@@ -45,6 +45,7 @@ namespace DataLayer
                         websites.Add(new WebsiteDTO((int)reader["Id"], (string)reader["Name"], (string)reader["Domain"]));
                     }
                 }
+                con.Close();
             }
             return websites;
         }
@@ -54,14 +55,15 @@ namespace DataLayer
             using (SqlConnection con = new SqlConnection(GlobalVars.connectionString))
             {
                 con.Open();
-                SqlCommand sqlCommand = new SqlCommand("INSERT INTO Pages (Name, Domain) VALUES (@name, @domain)", con);
+                SqlCommand sqlCommand = new SqlCommand("INSERT INTO Websites (Name, Domain) VALUES (@name, @domain)", con);
                 sqlCommand.Parameters.AddWithValue("@name", website.Name);
                 sqlCommand.Parameters.AddWithValue("@domain", website.Domain);
                 int rowsaffected = sqlCommand.ExecuteNonQuery();
+                con.Close();
             }
         }
 
-        public void UpdatePage(WebsiteDTO website)
+        public void UpdateWebsite(WebsiteDTO website)
         {
             using (SqlConnection con = new SqlConnection(GlobalVars.connectionString))
             {
@@ -71,18 +73,25 @@ namespace DataLayer
                 sqlCommand.Parameters.AddWithValue("@name", website.Name);
                 sqlCommand.Parameters.AddWithValue("@domain", website.Domain);
                 int rowsaffected = sqlCommand.ExecuteNonQuery();
+                con.Close();
             }
         }
 
-        public void DeleteWebsite(WebsiteDTO website)
+        public void DeleteWebsite(int id)
         {
             using (SqlConnection con = new SqlConnection(GlobalVars.connectionString))
             {
                 con.Open();
                 SqlCommand sqlCommand = new SqlCommand("DELETE FROM Websites Id = @id", con);
-                sqlCommand.Parameters.AddWithValue("@id", website.Id);
+                sqlCommand.Parameters.AddWithValue("@id", id);
                 int rowsaffected = sqlCommand.ExecuteNonQuery();
+                con.Close();
             }
+        }
+
+        public void UpdatePage(WebsiteDTO website)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -15,5 +15,10 @@ namespace Interfaces
             Name = name;
             Domain = domain;
         }
+        public WebsiteDTO(string name, string domain)
+        {
+            Name = name;
+            Domain = domain;
+        }
     }
 }

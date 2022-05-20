@@ -30,7 +30,17 @@ namespace LogicLayer
 
         public void CreateWebsite(Website website)
         {
-            Wb.CreateWebsite(new WebsiteDTO(website.Id, website.Name, website.Domain));
+            Wb.CreateWebsite(new WebsiteDTO(website.Name, website.Domain));
+        }
+
+        public void UpdateWebsite(Website website)
+        {
+            Wb.UpdateWebsite(new WebsiteDTO(website.Id, website.Name, website.Domain));
+        }
+
+        public void DeleteWebsite(int id)
+        {
+            Wb.DeleteWebsite(id);
         }
     }
 }
