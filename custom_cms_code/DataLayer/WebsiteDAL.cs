@@ -82,8 +82,8 @@ namespace DataLayer
             using (SqlConnection con = new SqlConnection(GlobalVars.connectionString))
             {
                 con.Open();
-                SqlCommand sqlCommand = new SqlCommand("DELETE FROM Websites Id = @id", con);
-                sqlCommand.Parameters.AddWithValue("@id", id);
+                SqlCommand sqlCommand = new SqlCommand("DELETE FROM Websites WHERE Id = @id", con);
+                sqlCommand.Parameters.AddWithValue("@id", id.ToString());
                 int rowsaffected = sqlCommand.ExecuteNonQuery();
                 con.Close();
             }

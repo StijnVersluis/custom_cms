@@ -4,10 +4,10 @@
     ViewData["Title"] = "index";
 }
 
-<h1>index1</h1>
+<h1>@ViewData["Title"]</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-success" asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>

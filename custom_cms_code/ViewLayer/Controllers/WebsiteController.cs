@@ -65,8 +65,9 @@ namespace ViewLayer.Controllers
                 wCont.UpdateWebsite(newWebsite);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception e)
             {
+                ViewData["Error"] = e;
                 return View();
             }
         }
@@ -87,8 +88,9 @@ namespace ViewLayer.Controllers
                 wCont.DeleteWebsite(id);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception e)
             {
+                ViewData["Error"] = e;
                 return View();
             }
         }
