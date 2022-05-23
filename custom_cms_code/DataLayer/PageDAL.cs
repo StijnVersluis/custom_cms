@@ -80,13 +80,13 @@ namespace DataLayer
             }
         }
 
-        public void DeletePage(PageDTO page)
+        public void DeletePage(int id)
         {
             using (SqlConnection con = new SqlConnection(GlobalVars.connectionString))
             {
                 con.Open();
-                SqlCommand sqlCommand = new SqlCommand("DELETE FROM Pages Id = @id", con);
-                sqlCommand.Parameters.AddWithValue("@id", page.Id);
+                SqlCommand sqlCommand = new SqlCommand("DELETE FROM Pages WHERE Id = @id", con);
+                sqlCommand.Parameters.AddWithValue("@id", id);
                 int rowsaffected = sqlCommand.ExecuteNonQuery();
             }
         }

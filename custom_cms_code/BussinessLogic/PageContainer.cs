@@ -29,5 +29,13 @@ namespace LogicLayer
         {
             iPageContainer.CreatePage(new PageDTO(page.Id, page.WebsiteId, page.Location));
         }
+        public void EditPage(Page page)
+        {
+            iPageContainer.EditPage(new PageDTO(page.Id, page.WebsiteId, page.Location));
+        }
+        public void DeletePage(int id)
+        {
+            iPageContainer.DeletePage(id);
+        }
     }
 }

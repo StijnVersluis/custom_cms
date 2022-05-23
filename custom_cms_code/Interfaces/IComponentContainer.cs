@@ -10,5 +10,6 @@ namespace Interfaces
     {
         public List<ComponentDTO> GetAllFromPage(int pageId);
         public ComponentDTO FindById(int id);
+        public List<ComponentDTO> GetAll();
     }
 }

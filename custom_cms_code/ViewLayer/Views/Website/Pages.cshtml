@@ -1,0 +1,45 @@
+﻿@model IEnumerable<LogicLayer.Page>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Pages";
+}
+
+
+<h1>@ViewData["CurrentWebsiteName"] - @ViewData["Title"]</h1>
+
+<p>
+    <a class="btn btn-success" href="/Pages/Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    <a href="/Page/Components/@item.Id">@item.Location</a>
+                </td>
+                <td>
+                    <a href="/Page/Edit/@item.Id">Edit</a> |
+                    <a href="/Page/Details/@item.Id">Show</a> |
+                    <a href="/Page/Delete/@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

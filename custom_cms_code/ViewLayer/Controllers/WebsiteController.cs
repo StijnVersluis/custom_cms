@@ -12,10 +12,18 @@ namespace ViewLayer.Controllers
     public class WebsiteController : Controller
     {
         private WebsiteContainer wCont = new WebsiteContainer(new WebsiteDAL());
+        private PageContainer pCont = new PageContainer(new PageDAL());
         // GET: WebsiteController
         public ActionResult Index()
         {
             return View(wCont.GetAllWebsites());
+        }
+
+        public ActionResult Pages(int id)
+        {
+            ViewData["CurrentWebsiteName"] = wCont.FindWebsiteById(id).Name;
+            ViewData["CurrentWebsiteDomain"] = wCont.FindWebsiteById(id).Domain;
+            return View(pCont.GetAll(id));
         }
 
         // GET: WebsiteController/Details/5

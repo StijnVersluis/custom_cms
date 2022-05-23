@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +7,23 @@ using System.Threading.Tasks;
 
 namespace LogicLayer
 {
-    class ComponentContainer
+    public class ComponentContainer
     {
-        public ComponentContainer()
+        private IComponentContainer IComponentContainer;
+        public ComponentContainer(IComponentContainer cont)
+        {
+            IComponentContainer = cont;
+        }
+
+        public List<Component> GetAll(int pageId)
         {
 
+            var res = new List<Component>();
+            IComponentContainer.GetAllFromPage(pageId).ForEach(w =>
+            {
+                res.Add(new Component(w));
+            });
+            return res;
         }
     }
 }
